@@ -1,0 +1,246 @@
+- What is advertising?
+    - Advertising is a paid form of promotion of non-personal communication about anything that can be sold
+    - What are some other types of promotion?
+        - Direct selling
+        - Personal selling
+        - PR
+        - Discount sales
+- Where is advertising usually sold?
+    - On any medium that delivers information to people, be it through word, pictures, audio or video content
+    - What are the new advertising mediums? (Internet advertising)
+        - Display Ads on browsers
+        - Social Media
+        - SEM/SEO
+        - Native advertising
+        - Video Ad
+        - Email Marketing
+        - *Increasingly: Location-Based Advertising
+- What are some models used to critique the effectiveness of advertisements?
+    - Stuart Hall 
+    - Minimal Effects
+    - Cutting Edge
+    - ATR
+    - Maslow Hierarchy
+    - What is the Stuart Hall Encoding Decoding theory?
+        - Advertisers encoding their messaging using advertising techniques
+        - Consumers consume the ad and decode the messaging
+        - What are the 3 types of messages consumers decode?
+            - Preferred reading -> Expected message
+            - Negotatied reading -> Halfway
+            - Oppositional Reading -> Completely against
+    - What is the Minimal Effects Theory?
+        - Higher sales causes greater spend in advertising, not the other way around
+    - What is the Cutting Edge Theory?
+        - Advertisers and influencers lead the trend by providing new and fresh cultural messaging, driving demand in the market
+    - What is the Awareness-Trial-Reinforcement Model (ATR)?
+        - Made aware
+        - Test out
+        - Retargeting
+    - What are the layers in Maslow Hierarchy of Needs? (SE,BL,SP)
+        - Top Layer - Self actualization
+        - Psychological layer -> Esteem needs, Belonging and love needs
+        - Basic needs -> Safety needs, physiological needs
+- What are some external factors in the information environment that impact effectiveness of ads?
+    - Personal experiences
+    - Word of mouth
+    - Non-paid reviews
+    - Formal education
+    - Rival/Negative ads
+    - Skepticism of ads and medium
+    - Price of the product
+    - Fulfilment on Maslow Hierarchy of Needs
+- What are some ways to analyse advertisements? (Overall Structures)
+    - Semiotic analysis -> Using signs to decode the message that the advertiser is trying to send
+    - Stuart Hall encoding decoding model -> Overall framework of how advertisements are being perceived
+    - Elaboration likelihood model -> Central and peripheral route of persuasion
+    - How to do semiotic analysis?
+        - Find the direct sign -> Denotation (Direct message)
+        - Find the implied message -> Connotation (Perceived meaning is different for everyone)
+    - How to do Stuart Hall Encoding - Decoding?
+        - Starts with encoding -> Ends with Decoding
+        - Who does encoding?
+            - Advertisers base the advertisement on cultural trends or motifs
+        - Who does decoding?
+            - Intended target audience of the advertisement
+        - What are the 3 types of reading as a result of the decoding process?
+            - Preferred Reading -> Align with the advertisement
+            - Negotiated Reading -> Somewhat agree but not fully
+            - Oppositional Reading -> Oppose the encoding given by the advertisers and read the opposite idea
+    - Is Semiotic a subset of the Stuart Hall?
+        - Yes, it is used in the process of decoding and encoding messages
+    - What is the elaboration likelihood model?
+        - it states that there are two types of way in which communication can be persuasive
+        - First central route -> Uses intellectual reasoning
+        - Second Route -> uses emotional appeals to short circuit decision making and reach the finish point
+        - What is the significance of the elaboration likelihood model?
+            - Changes to the type of messages being encoded and decoded
+        - When should we use each route?
+            - Depending if the audience (1) cares deeply (2) can reason well: (if Yes to both then central route is preferred)
+- What is the difference between advocacy and good-vertising?
+    - Advocacy is for good causes -> The aim is to drive social change and influence public opinion, profits are not the primary consideration
+    - Good-vertising has a corporate motive
+    - Who does advocacy advertising?
+        - Non-profit organizations and governments
+    - Who does good-vertising?
+        - Corporates
+- What is affirmative advertising?
+    - Affirmative advertising is advertising that sends positive social messages
+    - What are its contributions to society?
+        - Stimulating social change
+        - Enabling internet economy
+        - Funding media and heritage
+    - Why is affirmative advertising used?
+        - Because the social cause is deemed as important and the companies want to be associated with it
+    - Do advocacy advertisements employ positive or negative advertising approaches?
+        - They may employ both
+        - Sometimes advocacy ads employ shock advertisements to drive awareness -> Such as the anti-gambling advertisements in Singapore
+- What are the 4 models of media regulation?
+    - Authoritarian
+    - Communist
+    - Social Responsibility
+    - Libertarian
+    - What is the authoritarian model?
+        - Government type - Individual strong man
+        - Ownership - privately owned by strong men or people related to him
+        - Prioritizes - Society
+    - What is the Communist model?
+        - Government type - party
+        - Ownership - State level, not individual
+        - Prioritizes - Society
+    - What is the social responsibility model?
+        - Government type - Democratic multi-party
+        - Ownership - Mixture of public and private ownership
+        - Prioritizes - Balance between Society and Individualism
+    - What is the Libertarian model?
+        - Government type - Democratic
+        - Ownership - Private, fragmented
+        - Prioritizes - Individual views and individual responsibility
+- What are the significant rules in Singapore media regulation?
+    - The rules apply to any commercial advertisements and its purpose is to deal with regulation of commercial ads
+    - What ads does it apply to?
+        - It applies to all advertisements appearing in Singapore regardless of their place of origin
+    - Who is considered the consumer of the ad?
+        - Anyone who is likely to see a given advertisement can be considered a consumer
+- What is the consumer culture?
+    - Organization of social activities around buying and selling of goods
+    - People's social status and identity are formed partially based on ownership of consumer items
+    - What are the signs of a consumer culture oriented society?
+        - Retail therapy and self-rewarding thought patterns
+        - Mass Production and consumption of goods
+        - Sense of self worth and identity is based on the goods owned or not owned
+- What are the tell tale signs of a hyper consumerist society?
+    - In the home -> Digital advertisement through TV or the handheld devices
+    - Outdoors -> Shopping malls increase in size, greater transportation utility
+    - Overall -> Increase in promotional images and signs associated with private enterprises
+    - What is the purpose of a consumerist society?
+        - Perpetual desire creation and fulfilment from consumption of goods and services -> Thus obtaining pleasure
+- What is the role of advertising in consumerism?
+    - It create the stories and scenarios where brands and items are associated with values and invoke fantasies or desire of consuming those goods
+    - What are some examples of this?
+        - Logos on branded goods -> For showing off
+        - Sonic logos (melody) -> associated with the brand's goods
+    - What are the negative effects of consumerism?
+        - Over production and speedy disposal of goods
+    - What makes advertising efficient in driving and fulfilling consumer desires?
+        - It sends differentiated messages about where to go to fulfil one's desires
+        - Does advertisement fulfil your desires?
+            - No, it merely drives us to the correct place where we can fulfil our desires
+            - Usually advertisement segmentation means that consumers usually have the means to buy the goods
+- What is planned obsolescence?
+    - The pre-planned expiration of goods and services before they actually spoil
+    - What are the negative effects of planned obsolescence?
+        - created massive amounts of unnecessary waste (phone industry and the changing of mobile phones periodically)
+    - Why do companies do this?
+        - To encourage a more frequent sales cycle
+- What are vices?
+    - Vices are anything considered immoral, sinful or degrading in society
+    - Vices are usually about mistakes of falling into pursuing pleasure rather than overall bad character or morality
+- What are the 7 deadly sins (vices)?
+    - Sloth
+    - Lust
+    - Envy
+    - Gluttony
+    - Pride
+    - Wrath
+    - Greed or Covetousness (Limitless desire)
+- How are the 7 vices used?
+    - Pride is used to show status difference in using products
+    - Envy is used to show comparison and feelings of inferiority or submission
+    - Wrath is used to show anger and to evoke pain due to perceived injustice
+    - Lust is used to show desire of the unspeakable bodily desires to fuck
+    - Gluttony is used to show excessive desire for food and its associated sensory pleasures
+    - Covetousness is used to show the excessive desire for material goods
+    - Sloth is personified in the desire for convenience and reduced workloads
+    - What is the difference between covetousness and gluttony?
+        - The type of good being desired
+    - Is it possible to incorporate more than 1 type?
+        - Yes, in fact, they usually are a combination
+    - Why are vices typically used?
+        - Vices are used to create primal desires by inciting emotions or cultural scripting
+        - What happens with that desire?
+            - It is channeled into the goods that advertisers are trying to sell
+- Why is advertising controversial?
+    - Get us to buy things we do not initially want
+    - Appeals to emotions, rather than logic
+    - Feels deeply manipulative
+    - Biased advertising can create distortions of truths
+    - Creates conflicting claims
+    - Repetitive, vulgar and annoying
+    - How do ads manipulate us without our knowledge?
+        - By subliminal advertising, it is possible to have nearly invisible advertising still affect people's decision making → increased sales of Coke and Popcorn
+        - By propaganda techniques
+        - What are some propaganda techniques?
+            - Name calling → Giving things a bad name
+            - Glittering Generality → Giving things a good name
+            - Transfer → By implying its usage by popular or famous people
+            - Testimonial → Worded or Audio or Video describing how product is good
+            - Bandwagoning → Peer Pressure to keep up with the Joneses
+            - Usage of Plain Folks → Signal that the normal person likes it, to gain mass market appeal
+            - Card-Stacking → Selecting only the favourable ideas, falsehoods and facts to make the case
+            - Slogan → Use chants to unite crowds
+            - Sex appeal → By showing how product can increase sex appeal
+            - Music → By playing relevant background music
+            - Which propaganda techniques fall under Logos? (Logic)
+                - Bandwagoning (If there is network effects, else if its an illogical desire to keep up with the Joneses, it can be considered as Pathos)
+                - Card-stacking (if there is an attempt to use facts and arguments to convince people)
+            - Which propaganda techniques fall under Ethos? (Ethical)
+                - Testimonial (Brand Image of the endorser could be making a social statement e.g. Colin Kaepernick)
+                - Transfer
+            - Which propaganda techniques fall under Pathos? (Emotion)
+                - Name Calling
+                - Glittering Generality
+                - Plain Folks
+                - Sex Appeal
+                - Slogans
+                - Demonising
+                - Patriotic Appeal
+                - Snob Appeal
+                - Humour
+            - Why do the vast majority of techniques fall under emotions?
+                - Because emotions are the short circuit to the decision making lever in our brains
+- What is the role of advertising in commerce?
+    - To drive awareness, sales and profits
+- What is the role of advertising in government?
+    - To build political image and advocacy for certain policy measures
+    - Sometimes to drive recruitment
+- What is the role of advertising in NPOs?
+    - Advocacy advertising
+    - What is advocacy advertising?
+        - It is a form of advertising that aims not to sell and earn profits but rather to share an idea and drive awareness in the public about certain interests
+- How is the ad industry organised?
+    - A full stack ad agency typically has (1) Creatives, (2) Media Buyers, (3) Researchers, (4) Liaisons
+    - What are the roles of each in the agency?
+        - Creatives → To create the advertising inventory seen by the public in the most engaging manner, given a certain message
+        - Media Buyers → To negotiate with the media companies and select the most effective places to buy ads and place orders for advertising inventory
+        - Researchers → Analyse the data and come up with guidelines for the creatives to craft a compelling overall message
+        - Liaisons → Account executives who work with the clients to understand the needs of the client and act as a bridge to communicate to the creatives team
+    - What is the typical business model and revenue stream for ad agencies?
+        - Commission system → Agency get 15% discount if they have sufficient buying power on top of their earnings from the client
+        - Fee system → paid by the client for their time in creating the content and researchign the market for good ideas to be portrayed
+    - A media organisation typically has their own ad reps
+    - What do ad reps at media organisation do?
+        - They help smaller businesses create their own advertisements for a fee (without going to an agency)
+        - They also work with agency media buyers to help them buy ads with the media organisations
+    - Why are they organised that way?
+        - It benefits companies to be specialised in the things they do so that they can become experts in their own arenas and drive the effectiveness of advertising
+        - Having experts also ensure that there are industry standards and tracking media costs over time, stabilising the cost base required to undertake advertising at a mass scale

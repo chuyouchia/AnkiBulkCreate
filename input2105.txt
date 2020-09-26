@@ -1,0 +1,332 @@
+- What are the components of network?
+    - The internet is made up of network edge and network core
+    - What is network core?
+        - Routers consist of network core
+        - What is the purpose of the network core?
+            - To transmit data quickly and efficiently from geographically very far places from each other
+            - What are the ways in which data can be transferred over the network core?
+                - Packet switching
+                - Circuit switching
+                - What are the pros and cons of packet switching?
+                    - Pros -> Enable more than 1 host to utilize the same resources by splitting utilization up into packet levels
+                    - Cons -> Resources are being used on demand so there could be congestion and latency could result from too many hosts all simultaneously requesting at the same time
+                - What are the differences between packet switching and circuit switching?
+                    - Packet switching is used typically for data services such as the internet
+                    - Circuit switching is used when the quality and transmission speed needs to be guaranteed (such as in a phone call)
+                - What are the pros and cons of circuit switching?
+                    - Pros -> better fidelity and guarantee of performance
+                    - Cons -> idle or wasted resources during downtime or when not in use
+                - How does packet switching work?
+                    - Packets are passed from router to router via a store and forwarding process
+                    - How is the destination decided since the resources and route of transfer not decide before hand?
+                        - By checking routing tables, the routing algorithms in the routers will parse the headers of the packet sot determine the route that could be taken by the packets
+                - How does circuit switching work?
+                    - It pre-reserves the resources and the routes available, so it can directly send through once the route has been confirmed without any need for checking routing tables or parsing packet headers in the intermediate routers
+    - What are network edges?
+        - Smaller Access networks formed by hosts, links and end devices -> that receive their data packets from a router which is connected to the network core via the modem
+        - What is the purpose of network edges?
+            - They handle the network access for the localized area and route data packets to end devices
+            - They are typically one hop away from the end devices
+            - How are network edges connected to the network core?
+                - Via a router which is connected to the modem (ONT) typically provided by the internet service provider(ISP)
+        - What are some types of network edges?
+            - Wide area network(WAN) like 3G or 4G
+            - Wireless Local Area network (WIFI)
+            - Wired Local Area network (WLAN)
+            - Physical network connection -> Cable connection via crossover cables
+        - Are university networks considered ISP?
+            - No they are access level networks -> ISP is like singtel
+- What is throughput and link rate?
+    - Throughput is the number of bits that can be transmitted per unit time for the combined link
+    - Link rate is the number of bits that can be transmitted per unit time for one particular link
+    - What could result in delays in packet switching networks?
+        - Propagation
+        - Queuing
+        - Transmission delay
+        - Processing Delay
+        - What is the cause of propagation delays?
+            - Caused by the physical travelling of signals
+        - What is the cause of queuing delays?
+            - Caused by packets being queued at the router
+        - What is the cause of transmission delay?
+            - Caused by the time required to convert bits into electric signals (sine and cosine waves)
+        - What is the cause of processing delay?
+            - Caused by the requirement to process headers due to networking protocols
+        - How do we calculate each of the delays?
+            - Link rate formula -> for the transmission delay  $`T = Size/Rate`$
+            - Propagation distance over speed -> Give delay time for propagation `T = Distance / Speed`
+    - Why would there be loss in packets for packet switching networks?
+        - There could be buffer overflow due to the finite capacity at each router
+- What are the 5 layers of networking protocols?
+    - Application
+    - Transport
+    - Network
+    - Link
+    - Physical
+    - What happens when each packet travels up and down the layers?
+        - The headers are added when leaving the routers and the headers are removed when being parsed by the next routers
+- What are application layer protocols?
+    - HTTP
+    - DNS
+    - Email -> used to resolved email data upon loading
+    - What is the use of application layer protocols?
+        - They define the type of messages being passed
+        - They define how those messages are being passed -> when and how the messages can be responded to
+    - Can application layer protocols be open or proprietary?
+        - Yes
+        - Open -> http and SMTP
+        - Proprietary -> Skype
+    - What is HTTP?
+        - HTTP is used for the web as its application layer protocol
+        - It sends HTML pages from the server to the client when the client requests for a specific page
+        - What are the 2 types of HTTP connections?
+            - Non-persistent HTTP -> Need to set up TCP connection to the server each time a new request is being processed
+            - Persistent HTTP -> sets up the required connection once and does not end the TCP connection every time a request has been processed
+            - What is the advantage of persistent HTTP?
+                - Reduce round trip time to set up connection -> one RTT is required to set up 1 TCP connection
+                - Much faster when many files are required as there could be almost parallel requests for multiple objects once the html file is received by the client
+            - What is the transmission time required per file for non-persistent?
+                - 2*RTT + file transmission time (RTT includes the delay)
+            - What is the best case transmission time for persistent?
+                - 2 RTT for handshake and first file + 1 RTT for all remaining reference object (pipeline during the window)
+        - What are some possible messages for HTTP?
+            - GET -> Requests server for a particular page
+            - Conditional GET -> If there is already a cached version which is up to date, no need to send file
+            - POST -> Sends a particular page back
+            - HEAD -> Client requests server for header of the object (without the actual file)
+            - PUT -> Uploads file to path specified in URL field
+            - DELETE -> deletes file specified in the URL field
+                - What are some response state codes for the response message?
+                    - 200 - Ok
+                    - 301 - Moved permanently
+                    - 304 - Not modified
+                    - 403 - Forbidden
+                    - 404 - Not found
+            - How do webpages track our history?
+                - HTTP does not track our information
+                - Cookies attached as header fields are used to carry state
+                - How are cookies managed?
+                    - Each client host manages the individual cookie
+                    - Database simply uses that cookie to sign in and access any cookie specific functions
+            - What is the difference between HTTP and HTTPs?
+                - Security is achieved by message encryption (does not matter if its the 1.1 or 1.0 version)
+        - What is the transport service used by HTTP?
+            - HTTP uses TCP
+        - Does HTTP maintain the history (state) of user accessing the file?
+            - No
+            - How do pages know what we have accessed before?
+                - Using cookies, they can be attached to the interactions between the client and the server.
+                - Cookie specific actions can be used to access the server of the service being used -> access the related entries
+    - What is DNS?
+        - DNS stands for domain name system
+        - What is the use of DNS?
+            - It is used to convert server name to IP address (e.g. [www.example.org](http://www.example.org) -> 192.132.11.12)
+            - Are the names used by the web page always the real name?
+                - No, sometimes they can be canonical names (names that look better and are easier to type in)
+                - Could there be multiple canonical names for each name?
+                    - Yes
+                - Is the canonical name or the offical name used to convert into IP address?
+                    - The official name
+        - What does the DNS server store?
+            - They store resource records
+            - What are resource records?
+                - Resource records are entries used to access the associated resources using related data entries (e.g. from official name access IP address)
+                - What are the different types of resource records?
+                    - Type A -> uses host name to find IP address
+                    - Type NS -> uses domain to find the hostname of the authoritative server for the domain
+                    - Type CNAME -> translates canonical names into official server names
+                    - Type MX -> translates the name to find the associated mail server
+                - Where are resource records stored?
+                    - distributed, hierarchical databases
+                - What does the hierarchy of those databases look like?
+                    - Root -> Top Level Domains -> Authoritative Domains
+                    - Do local DNS servers belong to the hierarchy?
+                        - No, because they could be separate and only hold resource records
+                        - Only authoritative servers are considered a part of the hierarchy that would be queried if needed
+                - Which server can be considered as the authoritative server?
+                    - When the organisations that hosts the service define themselves as authoritative
+                - How does the local DNS server help to reduce the time taken to query servers?
+                    - Local DNS server caches (so the answer is not entirely up to date)
+                    - there is a time to live (TTL) before the DNS server will have to query the original server again for updates
+                - How do local DNS servers transmit information?
+                    - They use UDP (as the server is nearby, can just transmit multiple packets to prevent packet loss)
+                - How are the databases interacting with each other?
+                    - Through either iterative or recursive query
+                    - Is iterative or recursive query preferable?
+                        - Iterative is preferable as it would not overload the root servers -> they would need to maintain the query for the longest in a recursive format, until the final answer is derived
+            - What is the difference between IP and URL?
+                - IP address is for a machine
+                - URL points towards a web service, hosted by a machine
+        - What is the transport service used by DNS?
+            - UDP -> because it is close by and can send multiple to prevent packet loss
+- What are the 2 types of network application approaches?
+    - Client to server -> Server waits for requests and provides requested service, client initiates the contact with server
+    - Peer to Peer -> No always on server and sometimes peer acts as service, sometimes act as client
+    - What are the pros and cons of C2S compared to P2P?
+        - Peer to peer to self scalable, but management of data is more complex since data is stored locally -> May need to make backup copies in case certain servers leave
+        - C2S is centralised and easier to manage, but not self-scalable -> if the # of clients increase, there is a need to increase server capacity manually
+- What are transport layer protocols?
+    - TCP -> Circuit switching based by reserving the resources required
+    - UDP -> Packet switching based by firing off packets without congestion controls
+    - What are the pros and cons of using either of TCP/UDP?
+        - TCP -> more reliable but needs to reserve resources
+        - UDP -> Less reliable but allows for live multimedia and slight data loss (losing some audio data or video data often does not prevent understanding), but it would be faster in establish connection since it does not need to reserve resources
+- What do the hosts in transport layer do?
+    - On the sender side -> Breaks up messages into segments and give headers for the message to be transferred
+    - On the receiver side -> Collects the messages and reassemble them in the correct order
+- How to make sure that UDP transfers reliably?
+    - Using checksum
+    - Checking sequence number of packets
+    - Using retransmission and timeout checks
+    - How does UDP dispatch the packets to the correct port #?
+        - Based on the packet headers processed
+    - How does UDP check that the data is not corrupted?
+        - by using checksum to identify bit error
+        - How is checksum computed?
+            - Adding 2 16 bit integers via binary computation
+            - Then taking the complement of the 2
+            - If the checksum is correct, then the data is considered as not corrupted
+    - What are the principles of reliable data transfers for UDP? (Unidirectional)
+        - Use Checksum to detect bit errors
+        - Use Acks and NAKs to tell sender that packet is okay or required retransmission
+        - Use sequence number to allow receiver to determine if duplicate packets have been sent (0,1 only)
+        - timeout to deal with packet loss midway -> retransmit if already send out or if packet received is corrupted
+        - Only move on to the next cycle if the sender receives the confirmation
+        - What is RDT 1.0?
+            - RDT 1.0 assumes that the network layer is perfectly reliable in terms of (re-ordering, packet loss and sending duplicates)
+            - Hence, it just needs to send and receive, without any acknowledgements since the assumption is that sending and receiving is perfect
+        - What is RD 2.0?
+            - Assumes that there could be bit errors on top of otherwise perfect channel
+            - In order to deal with bit errors, use `checksum` and sum up the source and destination port number
+            - Calculate and compare that its the same. If not the same, send Negative ACKs, else send positive ACKs
+            - As ACKs could be garbled as well, sender will retransmit upon seeing either NAKs or garbled ACKs
+            - Could there still be errors if checksum is correct?
+                - Yes if 2 bits at the same position in the 2 different bits are flipped at the same time
+            - What is the problem with retransmission?
+                - It could end up with duplicate packets
+        - What is RDT 2.1?
+            - It deals with the duplicate packets due to retransmission by attaching sequence number to the packets
+            - Sequence number are then attached to ACKs or NAKs to tell sender which files to retransmit or transmit next
+        - What is RDT 2.2?
+            - It makes uses of the sequence number to retransmit previous ACK when failing (duplicate) instead of sending NAKs if packets fail to be received by sender
+        - What is RDT 3.0?
+            - There could not only be packet corruption, but packet loss as well
+            - Packet loss means that either receiver does not send ACK or sender does received ACK as well. Hence, there must be a `timer` to track the time to receive the acknowledgement.
+            - If ACK not received, assumed to have failed in packet sending
+            - How should we choose the best timer interval?
+    - What is the problem with utilising RDT protocols?
+        - Because of the time taken for RDT, utilisation of the pipeline is very low
+        - What is the solution to improve pipeline utilisation?
+            - Make use of the free time sender has to send multiple packets at once -> this is called `pipelining`
+            - What is the conditions for pipelinining to work?
+                - Greater range of sequence numbers since more than one packet is being sent and they might need to be re-ordered at the end
+                - Buffers available at sender and receiver to ensure that particular window of packet is fully recieved before next forwarding process
+            - What are some common pipelining protocols?
+                - Go-Back-N -> `GBN`
+                    - Cumulative sending and Cumulative ACKs
+                    - Timer kept only for oldest packet yet to be ACK-ed
+                    - How many packets does GBN retransmit if there is packet loss or not ACK-ed?
+                        - It retransmit the full window starting from the oldest un-ACKed packet
+                    - What happens if the packet is received but not in order?
+                        - Then it will drop the packet. It only processes packets that are in order
+                - Selective Repeat -> `SR`
+                    - Individual sending and individual ACKs
+                    - Timer kept individually for each un-ACKed packet
+                    - How many packets does selective repeat retransmit if there is packet loss or not ACK-ed?
+                        - It retransmit up to the given window (does not move on until all within the window is sent and fully ACKed)
+                    - What happens if receiver receives packet outside of window?
+                        - It will ignore the packet
+- Why is TCP a more reliable form of transport layer than UDP?
+    - It has an established connection instead of just firing off packets in hopes that it will receive an `ack` message eventually
+    - How does TCP establish connection?
+        - Uses a 3 way handshake via the `synbit` in the header
+        - Receiver acks the syn
+        - Then sender acks the acks while sending the new data segment
+    - How does TCP close connection?
+        - via the `finbit` in the header
+        - Receiver receives finbit and acks + close server socket
+        - Sender receives the ack and acks the ack + close listening
+    - Does TCP uses buffer?
+        - Generally yes -> But if the segment is out of order, choosing to buffer or drop depends on the implementation
+    - Does TCP use cumulative ACK or selective ACK?
+        - Uses cumulative ACK
+        - Sends back `SELECTIVE` unACK-ed packets
+    - Does TCP uses sequence number?
+        - Yes, but with offset
+        - What is an offset?
+            - Using offset as the initial seq number
+            - Byte size added to offset each time it is cumulatively send and received
+    - Is TCP duplex?
+        - Yes you can send both ways. Piggyback on the ACKs to send next segments from receiver
+    - Does TCP have a timeout value?
+        - Yes.
+        - How is that timeout value computed?
+            - Based on data obtained from the estimated RTT
+            - How is estimated RTT computed?
+                - E-RTT = (1-a)*Estimated RTT + a* Estimated RTT
+                - A = 0.125
+            - How is Dev-RTT computed?
+                - Dev RTT = (1-b)* Dev RTT + B * (Sample RTT - Estimated RTT)
+                - value of B typically = 0.25
+            - Timeout interval = Estimated RTT + 4*DEV RTT (safety margin of 4)
+            - How to avoid low utilisation when timeout periods are relatively long?
+                - Implement fast retransmission
+                - What is fast retransmission?
+                    - If the sender receives 4 ACK, it will assume that segment is lost
+                    - Hence it will resend segment before the timer expires
+                    - Why is the number 4?
+                        - Because based statistical data, this is the optimal number
+- What is the purpose of the network layer?
+    - Network layer exists to deliver packets to specified hosts
+    - How does the network layer know which host to forward to?
+        - It knows by parsing the header of the datagram
+        - What is in the header?
+            - The IPv4 address
+- What is the purpose of an IP address?
+    - It acts as a unique identifier of a given host
+    - How does a host get an IP address?
+        - Manually allocated -> by system administrator
+        - Dynamically allocated -> Dynamic Host Configuration Protocol (DHCP server)
+        - What is the advantage of the DHCP server?
+            - It is more scalable
+        - How does the DHCP 4 step process work?
+            - Client broadcast `discover`
+            - Server(s) respond with `offer`
+            - Client respond to one of the server requests with `request`
+            - Server who sent specific request sends `ACK`
+            - What is the initial client address when a host join DHCP network?
+                - 0.0.0.0
+            - What is the initial destination address for the DHCP server?
+                - 255.255.255.255
+            - Does the client change it IP address once DHCP server responds?
+                - No but it now falls under the broadcast IP address of 255.255.255.255 until the new IP address is fully ACK-ed
+            - What are the port numbers of the server and client?
+                - Server is port number 67
+                - Client is 68
+            - What is the transaction ID for?
+                - to indicate the type of transaction -> sending offer or accepting offer of IP address
+        - Does DHCP only provide IP address?
+            - No it also provides IP of first hop router (gateway into internet)
+            - it provides address of the local DNS server
+            - It provides a network mask
+    - Do routers have IP addresses?
+        - yes, and it can have more than 1 address as it belongs to more than 1 subnet (there is a unique identifier for it in each of the given subnets)
+- How does the network layer achieve data forwarding?
+    - It achieves data forwarding by routing to the routers which contains entries matching the IP address being parsed in the header
+    - Are the routers always directly pointing to hosts?
+        - Not necessarily, they could be pointing to other routers who are representative of subnets
+        - What is a subnet?
+            - It is a network group containing a prefix which matches the IP addresses of all hosts inside
+        - What is contained inside a router that enable it to achieve routing?
+            - Routing table will provide the subnet groups available for routing
+            - By reading the packet header and comparing the matching prefix, it will be able to identify which router to send it to
+            - What if there are multiple matching subnets?
+                - take the longest prefix -> most specific and accurate
+                - Why would there be multiple matching subnets?
+                    - because the subnets are not always fixed in one place. Sometimes people can change ISP providers but keep their own IP addresses bought -> Routers need to be updated when IP providers are changed
+    - How does the network layer split the IP addresses up into different groups?
+        - Via hierarchical addressing
+        - What is hierarchical addressing?
+            - It allows each router to deal with one layer of information -> narrow down one layer of subnet each time
+            - Why is this done?
+                - because it is more efficient than checking through all of the relevant IP addresses one by one -> it is like searching through a binary search tree
